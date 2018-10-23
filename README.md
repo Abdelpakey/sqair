@@ -21,11 +21,11 @@ Install [Tensorflow v1.6](https://www.tensorflow.org/versions/r1.6/install/),  a
 
 SQAIR learns to reconstruct a sequence of imaes by detecting objects in every frame and then propagating them to the following frames. This results in unsupervised object detection & tracking, which we can see in the figure below. The figure was generated from a model trained for 1M iterations. The maximum number of objects in a frame (and therefore number of detected and propagated objects) is set to four, but there are never more than two objects. The first row shows inputs to the model (time flies from left to right), while the second row shows reconstructions with marked glimpse locations. Colors of the bounding boxes correspond to object id. Here, the color is always the same, which means that objects are properly tracked.
 
-![SQAIR results](https://github.com/akosiorek/seq_air/blob/cleanup/resources/sqair_mnist/000037.png)
+![SQAIR results](https://github.com/akosiorek/sqair/tree/master/resources/sqair_mnist/000037.png)
 
-![SQAIR results](https://github.com/akosiorek/seq_air/blob/cleanup/resources/sqair_mnist/000050.png)
+![SQAIR results](https://github.com/akosiorek/sqair/tree/master/resources/sqair_mnist/000050.png)
 
-![SQAIR results](https://github.com/akosiorek/seq_air/blob/cleanup/resources/sqair_mnist/000098.png)
+![SQAIR results](https://github.com/akosiorek/sqair/tree/master/resources/sqair_mnist/000098.png)
 
 The model here was trained on sequences of up to 10 time-steps. We have also evaluated on 100 time-step sequences, where objects' motion is much more noisy than in the training data. [Here are the results.](https://youtu.be/vIVaK6LK-qE)
 
